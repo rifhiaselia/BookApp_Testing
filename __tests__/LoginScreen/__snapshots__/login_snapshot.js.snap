@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test snapshot home test berhasil 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#ffffff",
+      "flex": 1,
+      "padding": 20,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/Assets/Image/login.jpg",
+      }
+    }
+    style={
+      Object {
+        "height": 200,
+        "marginBottom": 50,
+        "marginHorizontal": 65,
+        "marginTop": 45,
+        "width": 200,
+      }
+    }
+  />
+  <TextInput
+    onChangeText={[Function]}
+    placeholder="Email"
+    secureTextEntry={true}
+    style={
+      Object {
+        "backgroundColor": "#DEE6EF",
+        "borderColor": "grey",
+        "borderRadius": 5,
+        "borderWidth": 1,
+        "marginBottom": 10,
+        "padding": 10,
+      }
+    }
+    testID="emaillogin"
+    value=""
+  />
+  <TextInput
+    onChangeText={[Function]}
+    placeholder="Password"
+    secureTextEntry={true}
+    style={
+      Object {
+        "backgroundColor": "#DEE6EF",
+        "borderColor": "grey",
+        "borderRadius": 5,
+        "borderWidth": 1,
+        "marginBottom": 10,
+        "padding": 10,
+      }
+    }
+    testID="passwordlogin"
+    value=""
+  />
+  <View
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID="submitlogin"
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#007AFF",
+              "fontSize": 18,
+              "margin": 8,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        LOGIN
+      </Text>
+    </View>
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "grey",
+        "fontSize": 15,
+        "marginVertical": 10,
+        "textAlign": "center",
+      }
+    }
+  >
+    Don't have an account?
+  </Text>
+  <View
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID="gotoregister"
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#007AFF",
+              "fontSize": 18,
+              "margin": 8,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Register
+      </Text>
+    </View>
+  </View>
+</View>
+`;

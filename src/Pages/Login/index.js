@@ -1,4 +1,12 @@
-import {StyleSheet, Text, View, Image, TextInput, Button, Alert} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  TextInput,
+  Button,
+  Alert,
+} from 'react-native';
 import React, {useState} from 'react';
 import {LogIn} from '../../Assets/Image';
 import {useDispatch, useSelector} from 'react-redux';
@@ -10,10 +18,10 @@ const Login = ({navigation}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-const isLogin=useSelector(state=>{
-  console.log('its login?', state.appData.isLogin);
-  return state.appData.isLogin
-})
+  const isLogin = useSelector(state => {
+    console.log('its login?', state.appData.isLogin);
+    return state.appData.isLogin;
+  });
 
   function kirimData() {
     const data = {
@@ -21,7 +29,7 @@ const isLogin=useSelector(state=>{
       password: password,
     };
     console.log(data);
-    dispatch(LoginSuccess(data, navigation))
+    dispatch(LoginSuccess(data, navigation));
     // isLogin ? navigation.navigate('Home') : Alert.alert('Login Gagal');
   }
 
@@ -29,23 +37,27 @@ const isLogin=useSelector(state=>{
     <View style={styles.Container}>
       <Image style={styles.login} source={LogIn} />
       <TextInput
+        testID="emaillogin"
         style={styles.text}
         placeholder="Email"
         value={email}
-        onChangeText={text => setEmail(text)} testID='emaillogin'
+        onChangeText={text => setEmail(text)}
+        secureTextEntry={true}
       />
       <TextInput
+        testID="passwordlogin"
         style={styles.text}
         placeholder="Password"
         value={password}
         onChangeText={text => setPassword(text)}
-        secureTextEntry={true} testID='passwordlogin'
+        secureTextEntry={true}
       />
-      <Button title="LOGIN" onPress={kirimData} testID='submitlogin'/>
+      <Button testID="submitlogin" title="LOGIN" onPress={kirimData} />
       <Text style={styles.text2}>Don't have an account?</Text>
       <Button
+        testID="gotoregister"
         title="Register"
-        onPress={() => navigation.navigate('Register')} testID='gotoregister'
+        onPress={() => navigation.navigate('Register')}
       />
     </View>
   );

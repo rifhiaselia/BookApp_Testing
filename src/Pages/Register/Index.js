@@ -49,12 +49,20 @@ const Register = ({navigation}) => {
           value={name}
           onChangeText={text => setName(text)}
         />
+        {/* <TextInput
+          testID="input-email"
+          style={styles.text}
+          placeholder="Email"
+          value={email}
+          onChangeText={text => setEmail(text)}
+        /> */}
         <TextInput
           testID="input-email"
           style={styles.text}
           placeholder="Email"
           value={email}
           onChangeText={text => setEmail(text)}
+          secureTextEntry={true}
         />
         <TextInput
           testID="input-password"

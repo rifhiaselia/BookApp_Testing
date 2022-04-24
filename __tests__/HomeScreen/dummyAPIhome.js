@@ -1,4 +1,4 @@
-export const dummyAPIlhome = {
+export const dummyAPIhome = {
     results: [
       {
         title: 'Harry Potter and the Order of the Phoenix',
